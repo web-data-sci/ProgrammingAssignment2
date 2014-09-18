@@ -37,3 +37,38 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inverse)
   inverse
 }
+
+#From Assignment discussion forum, I took unit tests. 
+#Results of unit tests from R studio console is as follows.
+#> source('C:/git/data_science/ProgrammingAssignment2/cachematrix.R', echo=TRUE)
+
+#> # Following functions cache inverse of a matrix. 
+#> # Since computing matrix inverse is an expensive operation,
+#> # caching provides benefits as com .... [TRUNCATED] 
+
+#> # This function computes the inverse of the special "matrix" returned by 
+#> #  makeCacheMatrix above. If the inverse has already been calculated 
+#>  .... [TRUNCATED] 
+#> m<-makeCacheMatrix(matrix(1:4,2,2))
+#> cacheSolve(m)
+#     [,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
+#> cacheSolve(m)
+#getting cached data
+#     [,1] [,2]
+#[1,]   -2  1.5
+#[2,]    1 -0.5
+#> m$set(matrix(c(1,2,3,6,5,4,9,7,8),3,3,byrow=T))
+#> cacheSolve(m)
+#           [,1]       [,2]       [,3]
+#[1,] -0.5714286 -0.2380952  0.3333333
+#[2,]  0.5714286  0.9047619 -0.6666667
+#[3,]  0.1428571 -0.5238095  0.3333333
+#> cacheSolve(m)
+#getting cached data
+#           [,1]       [,2]       [,3]
+#[1,] -0.5714286 -0.2380952  0.3333333
+#[2,]  0.5714286  0.9047619 -0.6666667
+#[3,]  0.1428571 -0.5238095  0.3333333
+#> 
