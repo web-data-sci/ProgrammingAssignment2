@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
 }
 
 #From Assignment discussion forum, I took unit tests. 
-#Results of unit tests from R studio console is as follows.
+#Results of unit tests from R studio console are as follows.
 #> source('C:/git/data_science/ProgrammingAssignment2/cachematrix.R', echo=TRUE)
 
 #> # Following functions cache inverse of a matrix. 
